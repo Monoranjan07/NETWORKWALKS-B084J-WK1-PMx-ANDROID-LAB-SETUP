@@ -320,20 +320,20 @@ The tests move outward one layer at a time, so a failure shows where the problem
 
 | Figure | File                                                  | Content                                           |
 | ------ | ----------------------------------------------------- | ------------------------------------------------- |
-| 1      | `images/01-vmware-android-vm.png`                     | Android9 VM in VMware Workstation 17 Player       |
-| 2      | `images/02-android-x86-boot-menu.png`                 | Android-x86 boot menu                             |
-| 3      | `images/03-android-grub-configuration.png`            | GRUB entry opened for editing                     |
-| 4      | `images/04-android-grub-nomodeset.png`                | GRUB command line with `nomodeset`                |
-| 5      | `images/05-android-boot-process.png`                  | Boot process                                      |
-| 6      | `images/06-android-partition-creation.png`            | Partition creation                                |
-| 7      | `images/07-android-installation-partition-selection.png` | Installation partition selection               |
-| 8      | `images/08-android-boot-logo.png`                     | Android boot logo                                 |
-| 9      | `images/09-android-welcome-screen.png`                | Welcome screen                                    |
-| 10     | `images/10-android-about-tablet.png`                  | About tablet / version check                      |
-| 11     | `images/11-android-network-details.png`               | VirtWifi network details                          |
-| 12     | `images/12-android-static-ip-configuration.png`       | Static IP configuration                           |
-| 13     | `images/13-vmware-network-configuration.png`          | VMware network configuration                      |
-| 14     | `images/14-android-connectivity-tests.png`            | Terminal connectivity tests                       |
+| 1      | `images/01-vmware-android-vm.jpeg`                     | Android9 VM in VMware Workstation 17 Player       |
+| 2      | `images/02-android-x86-boot-menu.pjeg`                 | Android-x86 boot menu                             |
+| 3      | `images/03-android-grub-configuration.jpng`            | GRUB entry opened for editing                     |
+| 4      | `images/04-android-grub-nomodeset.jpeg`                | GRUB command line with `nomodeset`                |
+| 5      | `images/05-android-boot-process.jpeg`                  | Boot process                                      |
+| 6      | `images/06-android-partition-creation.jpeg`            | Partition creation                                |
+| 7      | `images/07-android-installation-partition-selection.jpeg` | Installation partition selection               |
+| 8      | `images/08-android-boot-logo.jpeg`                     | Android boot logo                                 |
+| 9      | `images/09-android-welcome-screen.jpeg`                | Welcome screen                                    |
+| 10     | `images/10-android-about-tablet.jpeg`                  | About tablet / version check                      |
+| 11     | `images/11-android-network-details.jpeg`               | VirtWifi network details                          |
+| 12     | `images/12-android-static-ip-configuration.jpeg`       | Static IP configuration                           |
+| 13     | `images/13-vmware-network-configuration.jpeg`          | VMware network configuration                      |
+| 14     | `images/14-android-connectivity-tests.jpeg`            | Terminal connectivity tests                       |
 
 ---
 
@@ -360,9 +360,9 @@ NETWORKWALKS-B084J-WK1-PMx-ANDROID-LAB-SETUP/
 ```
 
 ---
-
+ 
 ## Learning Outcomes
-
+ 
 - Creating and sizing a virtual machine in VMware Workstation 17 Player.
 - Attaching a VM to a custom virtual network shared with another lab machine.
 - Booting and installing Android-x86 on a hypervisor.
@@ -371,42 +371,41 @@ NETWORKWALKS-B084J-WK1-PMx-ANDROID-LAB-SETUP/
 - Converting an Android network interface from DHCP to static IPv4.
 - Relating prefix length to subnet mask, and understanding the roles of gateway and DNS.
 - Testing a network in layers: VM-to-VM, gateway, public IP, DNS and internet reachability.
-
 ---
-
+ 
 ## Security and Ethical Use
-
+ 
 This project is for **educational purposes and authorised practice only**. Security tools and techniques should be used only on systems that I own or have explicit permission to test. All activity in this project took place inside my own virtual lab, and no third-party systems were tested or attacked.
-
+ 
 ---
-
+ 
 ## Acknowledgements
-
+ 
 I thank **NetworkWalks** and the instructor for their guidance and for the opportunity to complete this hands-on cybersecurity project.
-
+ 
 | Contribution                    | Source                                                  |
 | ------------------------------- | ------------------------------------------------------- |
 | Training and guidance           | NetworkWalks Cybersecurity Internship and its instructor |
 | Practical implementation        | My own VM creation, installation and network configuration |
 | Documentation and screenshots   | Written and captured by me                               |
-
+ 
 ---
-
+ 
 ## Copyright and Credits
-
+ 
 VMware, Android-x86, Kali Linux and NetworkWalks, along with their names and logos, belong to their respective owners. I claim ownership only of my own documentation and screenshots in this repository. All trademarks are the property of their respective holders.
-
+ 
 ---
-
+ 
 ## Author
-
+ 
 ### Monoranjan Banik
-
+ 
 **Cybersecurity Student / Intern, NetworkWalks Cybersecurity Program, Batch B084J**
-
+ 
 [![GitHub](https://img.shields.io/badge/GitHub-Monoranjan07-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Monoranjan07)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Monoranjan%20Banik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/monoranjan-banik-3a0092335/)
-
+ 
 | Link                       | URL                                                                                         |
 | -------------------------- | ------------------------------------------------------------------------------------------- |
 | Project repository         | https://github.com/Monoranjan07/NETWORKWALKS-B084J-WK1-PMx-ANDROID-LAB-SETUP                |
