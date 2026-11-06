@@ -12,8 +12,8 @@
 ![Network](https://img.shields.io/badge/Network-10.0.0.0%2F24-blue?style=for-the-badge)
 ![Addressing](https://img.shields.io/badge/Android%20IPv4-Static%20(10.0.0.9)-informational?style=for-the-badge)
 
-[![GitHub](https://img.shields.io/badge/GitHub-RaxingR-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RaxingR)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rajatava%20Ghosh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajatava-ghosh-265aa6316/)
+[![GitHub](https://img.shields.io/badge/GitHub-Monoranjan07-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Monoranjan07)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Monoranjan%20Banik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/monoranjan-banik-3a0092335/)
 
 </div>
 
@@ -97,7 +97,7 @@ Android-x86 is a useful addition to a security lab because it gives a mobile ope
 
 I created a new virtual machine in VMware Workstation 17 Player and assigned 3 CPU cores, about 5 GB of RAM, a virtual disk, and the **Custom (Network Walks)** network adapter. Selecting the custom adapter at creation time places the VM on the same lab network as Kali Linux from its first boot.
 
-![Android9 virtual machine in VMware Workstation 17 Player](01-vmware-android-vm.png)
+![Android9 virtual machine in VMware Workstation 17 Player](images/01-vmware-android-vm.png)
 
 *Figure 1: The Android9 virtual machine and its hardware summary in VMware Workstation 17 Player.*
 
@@ -400,15 +400,14 @@ VMware, Android-x86, Kali Linux and NetworkWalks, along with their names and log
 
 ## Author
 
-### Rajatava Ghosh
+### Monoranjan Banik
 
 **Cybersecurity Student / Intern, NetworkWalks Cybersecurity Program, Batch B084J**
 
-[![GitHub](https://img.shields.io/badge/GitHub-RaxingR-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RaxingR)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rajatava%20Ghosh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajatava-ghosh-265aa6316/)
+[![GitHub](https://img.shields.io/badge/GitHub-Monoranjan07-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Monoranjan07)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Monoranjan%20Banik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/monoranjan-banik-3a0092335/)
 
-<!--
-Add these only after confirming they are yours:
-- Repository URL:      https://github.com/RaxingR/NETWORKWALKS-B084J-WK1-PMx-ANDROID-LAB-SETUP
-- LinkedIn project post: <your own post URL>
--->
+| Link                       | URL                                                                                         |
+| -------------------------- | ------------------------------------------------------------------------------------------- |
+| Project repository         | https://github.com/Monoranjan07/NETWORKWALKS-B084J-WK1-PMx-ANDROID-LAB-SETUP                |
+| LinkedIn project post      | https://www.linkedin.com/feed/update/urn:li:activity:7524506657783967744/                   |
