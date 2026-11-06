@@ -97,7 +97,7 @@ Android-x86 is a useful addition to a security lab because it gives a mobile ope
 
 I created a new virtual machine in VMware Workstation 17 Player and assigned 3 CPU cores, about 5 GB of RAM, a virtual disk, and the **Custom (Network Walks)** network adapter. Selecting the custom adapter at creation time places the VM on the same lab network as Kali Linux from its first boot.
 
-![Android9 virtual machine in VMware Workstation 17 Player](images/01-vmware-android-vm.png)
+![Android9 virtual machine in VMware Workstation 17 Player](01-vmware-android-vm.png)
 
 *Figure 1: The Android9 virtual machine and its hardware summary in VMware Workstation 17 Player.*
 
