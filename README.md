@@ -97,7 +97,7 @@ Android-x86 is a useful addition to a security lab because it gives a mobile ope
 
 I created a new virtual machine in VMware Workstation 17 Player and assigned 3 CPU cores, about 5 GB of RAM, a virtual disk, and the **Custom (Network Walks)** network adapter. Selecting the custom adapter at creation time places the VM on the same lab network as Kali Linux from its first boot.
 
-![Android9 virtual machine in VMware Workstation 17 Player](images/01-vmware-android-vm.png)
+![Android9 virtual machine in VMware Workstation 17 Player](01-vmware-android-vm.jpeg)
 
 *Figure 1: The Android9 virtual machine and its hardware summary in VMware Workstation 17 Player.*
 
@@ -105,7 +105,7 @@ I created a new virtual machine in VMware Workstation 17 Player and assigned 3 C
 
 Starting the VM from the Android-x86 9.0-r2 installation image opens the boot menu. This menu determines whether the system starts in live mode or launches the installer, and it is also where boot parameters can be adjusted.
 
-![Android-x86 boot menu](images/02-android-x86-boot-menu.png)
+![Android-x86 boot menu](02-android-x86-boot-menu.jpeg)
 
 *Figure 2: The Android-x86 boot menu shown when the VM starts from the installation media.*
 
@@ -113,7 +113,7 @@ Starting the VM from the Android-x86 9.0-r2 installation image opens the boot me
 
 GRUB allows the kernel command line of a boot entry to be edited for a single boot without changing the installation media. I opened the selected entry for editing so that I could review, and if needed extend, the kernel parameters.
 
-![GRUB boot entry opened for editing](images/03-android-grub-configuration.png)
+![GRUB boot entry opened for editing](03-android-grub-configuration.jpeg)
 
 *Figure 3: The GRUB boot entry opened for editing.*
 
@@ -128,7 +128,7 @@ Android-x86 running under a hypervisor can sometimes fail to bring up its graphi
 
 Both are **optional troubleshooting measures, not mandatory installation steps**. My screenshot evidence (Figure 4) shows `nomodeset` on the GRUB command line. I do not claim that either parameter was required for the installation to succeed.
 
-![GRUB command line containing nomodeset](images/04-android-grub-nomodeset.png)
+![GRUB command line containing nomodeset](04-android-grub-nomodeset.jpeg)
 
 *Figure 4: The GRUB command line with the `nomodeset` parameter present.*
 
@@ -136,7 +136,7 @@ Both are **optional troubleshooting measures, not mandatory installation steps**
 
 With the boot entry accepted, the Android-x86 environment began loading.
 
-![Android-x86 boot process](images/05-android-boot-process.png)
+![Android-x86 boot process](05-android-boot-process.jpeg)
 
 *Figure 5: The Android-x86 boot process after the GRUB entry was accepted.*
 
@@ -144,7 +144,7 @@ With the boot entry accepted, the Android-x86 environment began loading.
 
 The installer needs a formatted partition to write to, and a new virtual disk is empty. I used the installer's partitioning step to create a partition on the Android9 virtual disk. Because the disk is virtual, this step affects only the VM and not the Windows host.
 
-![Partition creation on the virtual disk](images/06-android-partition-creation.png)
+![Partition creation on the virtual disk](06-android-partition-creation.jpeg)
 
 *Figure 6: Creating a partition on the virtual disk in the Android-x86 installer.*
 
@@ -152,7 +152,7 @@ The installer needs a formatted partition to write to, and a new virtual disk is
 
 I then chose the partition that the installer would use as the installation target. Selecting the right partition is the key decision in this stage, since the installer writes the system to whichever partition is chosen.
 
-![Installation partition selection](images/07-android-installation-partition-selection.png)
+![Installation partition selection](07-android-installation-partition-selection.jpeg)
 
 *Figure 7: Selecting the partition for the Android-x86 installation.*
 
@@ -160,7 +160,7 @@ I then chose the partition that the installer would use as the installation targ
 
 After installation, the VM started from the virtual disk and displayed the Android boot logo, confirming that the system had been written to disk and could boot independently.
 
-![Android boot logo](images/08-android-boot-logo.png)
+![Android boot logo](08-android-boot-logo.jpeg)
 
 *Figure 8: The Android boot logo shown when starting the installed system.*
 
@@ -168,7 +168,7 @@ After installation, the VM started from the virtual disk and displayed the Andro
 
 The welcome screen begins Android's first-run setup, which must be completed before the Settings application and the rest of the interface are available.
 
-![Android welcome screen](images/09-android-welcome-screen.png)
+![Android welcome screen](09-android-welcome-screen.jpeg)
 
 *Figure 9: The Android welcome screen at first boot.*
 
@@ -176,7 +176,7 @@ The welcome screen begins Android's first-run setup, which must be completed bef
 
 I confirmed the installed release in the **About tablet** screen of Settings, so the result is checked on the running system and not assumed from the name of the installation image.
 
-![About tablet screen](images/10-android-about-tablet.png)
+![About tablet screen](10-android-about-tablet.jpeg)
 
 *Figure 10: The About tablet screen used to verify the installed Android version.*
 
@@ -210,7 +210,7 @@ Custom Network (Network Walks)
 
 The Android9 VM uses the **Custom (Network Walks)** adapter. This is the same lab network used by my Kali Linux machine, which is why both machines can be given addresses in `10.0.0.0/24`.
 
-![VMware network configuration](images/13-vmware-network-configuration.png)
+![VMware network configuration](13-vmware-network-configuration.jpeg)
 
 *Figure 13: The VMware network configuration for the lab network used by the Android9 VM.*
 
@@ -236,11 +236,11 @@ I changed the interface from DHCP to Static as follows:
 
 A prefix length of 24 is the same as the subnet mask `255.255.255.0`. The gateway address is the router for traffic leaving the subnet, and the two DNS entries are the resolvers Android uses to turn domain names into addresses.
 
-![Android network details for VirtWifi](images/11-android-network-details.png)
+![Android network details for VirtWifi](11-android-network-details.jpeg)
 
 *Figure 11: Android network details for the VirtWifi connection.*
 
-![Android static IP configuration](images/12-android-static-ip-configuration.png)
+![Android static IP configuration](12-android-static-ip-configuration.jpeg)
 
 *Figure 12: Static IP configuration with address 10.0.0.9, gateway 10.0.0.1, prefix length 24, and DNS 8.8.8.8 and 8.8.4.4.*
 
@@ -260,7 +260,7 @@ ping -c 4 networkwalks.com
 
 The `-c 4` option sends exactly four echo requests and then stops.
 
-![Connectivity tests from the Android terminal](images/14-android-connectivity-tests.png)
+![Connectivity tests from the Android terminal](14-android-connectivity-tests.jpeg)
 
 *Figure 14: Connectivity tests run from the Android terminal.*
 
